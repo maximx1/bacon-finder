@@ -1,6 +1,6 @@
 package technology.walrath.baconfinder
 
-import technology.walrath.baconfinder.api.parsers.{APIParser, ShoplocalAPIParser}
+import technology.walrath.baconfinder.api.parsers.{APIParser, ShoplocalAPIParser, WalmartAPIParser}
 import technology.walrath.baconfinder.filters.DealFilters._
 import technology.walrath.baconfinder.formatters.CommandLineOutputFormatter
 
@@ -8,7 +8,7 @@ import technology.walrath.baconfinder.formatters.CommandLineOutputFormatter
   * Created by justin on 7/2/16.
   */
 object BaconFinder {
-  val apiParsers: List[APIParser] = new ShoplocalAPIParser :: Nil
+  val apiParsers: List[APIParser] = new ShoplocalAPIParser :: new WalmartAPIParser :: Nil
 
   def main(args: Array[String]) = {
     val deals = args match {
