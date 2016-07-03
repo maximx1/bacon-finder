@@ -11,6 +11,4 @@ libraryDependencies ++= Seq(
   "org.scalamock" %% "scalamock-scalatest-support" % "3.2" % "test"
 )
 
-// Uncomment to use Akka
-//libraryDependencies +=
-
+assemblyJarName in assembly := "baconFinder.jar"

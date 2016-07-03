@@ -15,3 +15,11 @@ Title: John Morrell Bacon or Nathan’s Beef Franks
 	Start: 6/26/2016 12:00:00 AM
 	End: 7/2/2016 11:59:59 PM
 ```
+
+## Usage
+Bacon Only `java -jar baconFinder.jar`
+
+Keyword search `java -jar baconFinder.jar chicken`
+
+## Building
+`sbt assembly` or `activator assembly`
